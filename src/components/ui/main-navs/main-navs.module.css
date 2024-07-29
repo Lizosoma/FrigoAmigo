@@ -1,0 +1,73 @@
+.navs {
+  right: 30px;
+  position: fixed;
+  z-index: 2;
+}
+
+.navsItem {
+  position: relative;
+  background: linear-gradient(93deg, #59bc8c 2.22%, #66d9a2 99.03%);
+  padding: 20px 40px 20px 40px;
+  margin-right: -20px;
+  border: none;
+  border-radius: 0 0 30px 30px;
+  box-shadow: 8px 0 8px 8px rgba(0, 0, 0, 0.25);
+  transition: padding 0.5s ease;
+  cursor: pointer;
+}
+
+.navsItem:hover {
+  background: #66d9a2;
+}
+
+.active {
+  padding: 20px 40px 40px 40px;
+  background: #66d9a2;
+  box-shadow: 0 -8px 8px 8px rgba(0, 0, 0, 0.25);
+  z-index: 100 !important;
+}
+
+.navsLink {
+  padding: 0;
+  margin: 0;
+  color: #272826;
+  text-align: center;
+  font-family: 'NEXTART';
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.profile {
+  z-index: 50;
+}
+
+.download {
+  z-index: 49;
+}
+
+.recipes {
+  z-index: 48;
+}
+
+.premium {
+  z-index: 47;
+}
+
+.contacts {
+  z-index: 46;
+}
+
+@media screen and (max-width: 1024px) {
+  .navsLink {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navs {
+    display: none;
+  }
+}

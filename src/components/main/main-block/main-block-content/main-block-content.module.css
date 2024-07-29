@@ -1,0 +1,14 @@
+.content {
+  padding: 2em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+@media screen and (max-width: 879px) {
+  .content {
+    padding: 1.5em;
+  }
+}

@@ -1,0 +1,84 @@
+.privet {
+  color: #272826;
+  margin-left: -0.07em;
+  line-height: 0.75em;
+  font-size: 10vw;
+  font-family: 'NEXTART';
+  font-weight: 900;
+}
+
+.newld {
+  color: #272826;
+  font-size: 1.625rem;
+  font-family: 'RoundedMplus1c';
+  font-weight: 400;
+}
+
+.privetInfo {
+  color: #272826;
+  font-size: 1.625rem;
+  font-family: 'RoundedMplus1c';
+  font-weight: 400;
+}
+
+.stayFrash {
+  color: #272826;
+  font-size: 2.25rem;
+  margin: 0;
+  font-family: 'NEXTART';
+  font-weight: 400;
+}
+
+@media screen and (min-width: 1920px) {
+  .privet {
+    font-size: 192px;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  .newld {
+    font-size: 1.5rem;
+  }
+
+  .privetInfo {
+    font-size: 1.5rem;
+  }
+
+  .stayFrash {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .newld {
+    font-size: 1.5rem;
+  }
+
+  .privetInfo {
+    font-size: 1.5rem;
+  }
+
+  .stayFrash {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .privetInfo {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .newld {
+    font-size: 1.3rem;
+  }
+
+  .privetInfo {
+    font-size: 1.2rem;
+  }
+
+  .stayFrash {
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,50 @@
+.settings {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  background-color: transparent;
+  background-image: url(../../../../../assets/pictures/main-settings.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: all 0.3s ease;
+}
+
+.circle {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 98px;
+  height: 98px;
+  background-color: rgb(236, 154, 41, 0.5);
+  border-radius: 50%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.settings:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.settings.turned {
+  transform: rotate(30deg) scale(1.1);
+}
+
+.settings.turned.twice {
+  transform: rotate(-30deg);
+}
+
+@media screen and (max-width: 1024px) {
+  .settings {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .settings {
+    width: 40px;
+    height: 40px;
+  }
+}

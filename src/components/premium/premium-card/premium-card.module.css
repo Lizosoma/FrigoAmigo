@@ -1,0 +1,83 @@
+.card {
+  font-family: 'NEXTART';
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  font-size: 2vw;
+  box-shadow: 0 0 10px 5px rgba(102, 217, 162, 0.7);
+  background: #fff;
+  border-radius: 20px;
+  width: 18vw;
+  height: 18vw;
+}
+
+.period {
+  color: #66d9a2;
+}
+
+.price {
+  color: #272826;
+  font-size: 1.5vw;
+}
+
+@media screen and (min-width: 1920px) {
+  .card {
+    font-size: 1.5vw;
+    width: 14vw;
+    height: 14vw;
+  }
+
+  .price {
+    font-size: 1.2vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .card {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 45%;
+    height: auto;
+    min-height: 190px;
+    padding: 30px;
+    gap: 20px;
+  }
+
+  .period {
+    font-size: 3vw;
+  }
+
+  .price {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .card {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .period {
+    font-size: 4.5vw;
+  }
+
+  .price {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .card {
+    min-height: auto;
+    padding: 15px;
+    gap: 20px;
+  }
+}

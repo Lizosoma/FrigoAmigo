@@ -1,0 +1,140 @@
+.downloadContainer {
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.bg {
+  position: absolute;
+}
+
+.wrapper {
+  width: calc(var(--column) * 12 + var(--gutter) * 13);
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 100px;
+  padding-top: 8vw;
+}
+
+.heading {
+  margin-left: calc(var(--gutter) * 1);
+  font-family: 'NEXTART';
+  font-weight: 700;
+  font-size: 8vw;
+  line-height: 1.1;
+  margin-bottom: 0.5em;
+  color: #272826;
+}
+
+.qr {
+  position: absolute;
+  top: 8vw;
+  margin-left: calc(var(--column) * 8 + var(--gutter) * 9);
+  max-width: 405px;
+  width: 24vw;
+  max-height: 405px;
+}
+
+.texts {
+  font-family: 'Manrope';
+  font-weight: 400;
+  font-size: 3.5vw;
+  color: #272826;
+}
+
+.text1 {
+  margin-left: calc(var(--column) * 1 + var(--gutter) * 2);
+}
+
+.text2 {
+  margin-left: calc(var(--column) * 3 + var(--gutter) * 4);
+  font-size: 7vw;
+  font-family: 'NEXTART';
+  font-weight: 700;
+  color: #ec9a29;
+}
+
+.text3 {
+  margin-left: calc(var(--column) * 8 + var(--gutter) * 9);
+}
+
+.gp {
+  margin-left: calc(var(--gutter));
+  width: 24vw;
+}
+
+.text4 {
+  font-family: 'Manrope';
+  font-weight: 400;
+  font-size: 1vw;
+  margin-left: calc(var(--gutter));
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 1920px) {
+  .heading {
+    font-size: 154px;
+  }
+
+  .texts {
+    font-size: 58px;
+  }
+
+  .text2 {
+    font-size: 135px;
+  }
+
+  .gp {
+    width: 16vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .wrapper {
+    margin-bottom: 30px;
+  }
+
+  .heading {
+    font-size: 12vw;
+  }
+
+  .texts {
+    font-size: 5vw;
+  }
+
+  .text1 {
+    margin-left: calc(var(--column) * 1 + var(--gutter) * 2);
+  }
+
+  .text2 {
+    font-size: 8vw;
+  }
+
+  .text3 {
+    margin-left: calc(var(--column) * 7.6 + var(--gutter) * 8);
+  }
+
+  .qr {
+    position: relative;
+    margin-left: var(--gutter);
+    width: 42vw;
+  }
+
+  .gp {
+    width: 24vw;
+    margin-left: calc(var(--column) * 9 + var(--gutter) * 9);
+  }
+
+  .text4 {
+    font-size: 2vw;
+  }
+}

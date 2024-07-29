@@ -1,0 +1,148 @@
+.container {
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.premium {
+  font-family: 'NEXTART';
+  font-weight: 900;
+  color: #ec9a29;
+  font-size: 12vw;
+  margin-left: calc(var(--gutter));
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.premiumDecor {
+  position: absolute;
+  top: 0;
+  font-family: 'NEXTART';
+  font-weight: 900;
+  color: rgba(236, 154, 41, 0.1);
+  font-size: 20vw;
+  margin-left: calc(var(--column) * 5 + var(--gutter) * 6);
+}
+
+.texts {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+  top: 30px;
+  right: var(--gutter);
+  font-size: 1.7vw;
+  font-family: 'Manrope';
+  font-weight: 400;
+  color: #272826;
+}
+
+.textDecor {
+  font-family: 'NEXTART';
+  color: #ec9a29;
+}
+
+.cards {
+  margin: 100px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.bottomTexts {
+  margin: 0 var(--gutter);
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.5vw;
+  margin-bottom: 30px;
+}
+
+.bottomText1 {
+  font-family: 'NEXTART';
+}
+
+.bottomText2 {
+  font-family: 'Manrope';
+}
+
+.circles {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  width: 60vw;
+}
+
+@media screen and (min-width: 1920px) {
+  .premium {
+    font-size: 10vw;
+  }
+
+  .premiumDecor {
+    font-size: 16vw;
+  }
+
+  .texts {
+    font-size: 1vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .cards {
+    margin: 100px 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cards {
+    margin: 100px 80px;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .premium {
+    font-size: 18vw;
+  }
+
+  .premiumDecor {
+    top: 50px;
+  }
+
+  .texts {
+    gap: 20px;
+    top: 110px;
+    font-size: 3vw;
+  }
+
+  .cards {
+    margin: 180px 20px 60px 20px;
+    gap: 20px;
+    justify-content: space-around;
+  }
+
+  .bottomTexts {
+    font-size: 3vw;
+    margin-bottom: 10px;
+    line-height: 2;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .premiumDecor {
+    top: 30px;
+  }
+
+  .texts {
+    font-size: 4vw;
+    top: 80px;
+  }
+
+  .cards {
+    margin: 160px 20px 40px 20px;
+  }
+}

@@ -1,0 +1,101 @@
+.settingsTitle {
+  font-family: 'NEXTART';
+  font-weight: 900;
+  line-height: 0.75;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.settingsList {
+  display: flex;
+  flex-direction: column;
+  max-width: 30.625em;
+  border-top: 3px solid #272826;
+  border-bottom: 3px solid #272826;
+  padding: 20px 0;
+}
+
+.premium {
+  display: flex;
+}
+
+.premiumButton {
+  background-color: transparent;
+  font-family: 'Manrope';
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 30px;
+  margin-left: 20px;
+  transition: all 0.3s ease;
+}
+
+.premiumButton:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.door {
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.door:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+
+.doorText {
+  font-family: 'NEXTART';
+  font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+  .settingsTitle {
+    font-size: 2rem;
+  }
+
+  .premiumButton {
+    margin: 0;
+    margin-top: 5px;
+  }
+
+  .premium {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .settingsTitle {
+    font-size: 1.5rem;
+  }
+
+  .settingsList {
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #ec9a29;
+  }
+}

@@ -1,0 +1,80 @@
+.code {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.codeTitle {
+  font-family: 'NEXTART';
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.codeBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #66d9a2;
+  border-radius: 22px;
+  border: 3px solid #fff;
+}
+
+.codeNums {
+  font-family: 'Manrope';
+  font-weight: 400;
+  font-size: 2rem;
+  color: #fff;
+  padding: 10px 20px;
+  border-right: 3px solid #fff;
+}
+
+.codeButton {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  background-image: url('../../../../../../../assets/pictures/main-code-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.codeButton:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+
+@media screen and (max-width: 1024px) {
+  .codeTitle {
+    font-size: 1.5rem;
+  }
+
+  .codeNums {
+    font-size: 1.5rem;
+  }
+
+  .codeButton {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .code {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .codeTitle {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .code {
+    flex-direction: row;
+  }
+}

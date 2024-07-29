@@ -1,0 +1,80 @@
+.button {
+  color: #818181;
+  position: relative;
+  min-height: 75px;
+  border-radius: 95px;
+  border: 3px solid #d9d9d9;
+  background: #d9d9d9;
+  width: 100%;
+  padding: 0.625em;
+  font-size: 1.3rem;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  transition: all 0.3s ease;
+}
+
+.button:enabled {
+  color: #272826;
+  cursor: pointer;
+}
+
+.button:enabled:hover {
+  background: #fff;
+}
+
+.loader {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: block;
+  margin: 15px auto;
+  position: absolute;
+  color: #fff;
+  top: 15px;
+  box-sizing: border-box;
+  animation: shadowRolling 2s linear infinite;
+}
+
+@keyframes shadowRolling {
+  0% {
+    box-shadow: 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0),
+      0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
+  }
+  12% {
+    box-shadow: 100px 0 #272826, 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0),
+      0px 0 rgba(255, 255, 255, 0);
+  }
+  25% {
+    box-shadow: 110px 0 #272826, 100px 0 #272826, 0px 0 rgba(255, 255, 255, 0),
+      0px 0 rgba(255, 255, 255, 0);
+  }
+  36% {
+    box-shadow: 120px 0 #272826, 110px 0 #272826, 100px 0 #272826, 0px 0 rgba(255, 255, 255, 0);
+  }
+  50% {
+    box-shadow: 130px 0 #272826, 120px 0 #272826, 110px 0 #272826, 100px 0 #272826;
+  }
+  62% {
+    box-shadow: 200px 0 rgba(255, 255, 255, 0), 130px 0 #272826, 120px 0 #272826, 110px 0 #272826;
+  }
+  75% {
+    box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 130px 0 #272826,
+      120px 0 #272826;
+  }
+  87% {
+    box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0),
+      200px 0 rgba(255, 255, 255, 0), 130px 0 #272826;
+  }
+  100% {
+    box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0),
+      200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0);
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .button {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,45 @@
+.swalTitle {
+  font-family: 'NEXTART';
+  font-weight: 400;
+  color: #272826;
+}
+
+.swalText {
+  font-family: 'NEXTART';
+  font-weight: 400;
+  color: red;
+}
+
+.swalConfirmButton {
+  font-family: 'NEXTART';
+  font-weight: 500;
+  padding: 10px 24px;
+  margin: 0.3125em;
+  border-radius: 8px;
+  border: 2px solid #ec9a29;
+  color: #ec9a29;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.swalConfirmButton:hover {
+  background-color: rgba(236, 154, 41, 0.3);
+}
+
+.swalCancelButton {
+  font-family: 'NEXTART';
+  font-weight: 500;
+  padding: 10px 24px;
+  margin: 0.3125em;
+  border-radius: 8px;
+  border: 2px solid #272826;
+  color: #272826;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.swalCancelButton:hover {
+  background-color: rgba(39, 40, 38, 0.3);
+}

@@ -1,0 +1,73 @@
+.container {
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.heading {
+  font-family: 'NEXTART';
+  font-weight: 300;
+  font-size: 5rem;
+  line-height: 1.1;
+  padding-left: 150px;
+  margin-bottom: 50px;
+  color: #272826;
+  border-bottom: #ec9a29 5px solid;
+  width: fit-content;
+}
+
+.button {
+  width: 100%;
+  background-color: transparent;
+  color: #818181;
+  margin-bottom: 50px;
+}
+
+.buttonText {
+  font-family: 'Manrope';
+  font-weight: 400;
+  font-size: 1.5vw;
+  line-height: 1;
+}
+
+@media screen and (min-width: 1920px) {
+  .heading {
+    padding-left: 200px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .buttonText {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heading {
+    padding: 0;
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .buttonText {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .heading {
+    font-size: 14vw;
+  }
+
+  .button {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .buttonText {
+    font-size: 4vw;
+  }
+}

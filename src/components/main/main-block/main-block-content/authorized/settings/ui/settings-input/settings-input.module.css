@@ -1,0 +1,19 @@
+.settingsItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.settingsLabel {
+  padding-left: 1em;
+  font-size: 1.25rem;
+  font-family: 'Manrope';
+  font-weight: 400;
+}
+
+.settingsInput {
+  border-radius: 22px;
+  border: 2px solid #272826;
+  background: #e8e8e8;
+  max-width: 30.625em;
+  padding: 12px;
+}

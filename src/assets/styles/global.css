@@ -1,0 +1,189 @@
+/* Grid */
+
+:root {
+  --all-width: 1920;
+  --grid-margin: calc(20 / var(--all-width) * 100%);
+  --grid-column: calc(138.3333 / (var(--all-width) - 20 * 2) * 100%);
+  --grid-gutter: calc(20 / (var(--all-width) - 20 * 2) * 100%);
+  --margin: calc(20 / var(--all-width) * 100%);
+  --column: calc(138.3333 / (var(--all-width)) * 100%);
+  --gutter: calc(20 / (var(--all-width)) * 100%);
+}
+
+/* body::after {
+  content: '';
+  position: absolute;
+  z-index: 1000;
+  top: 2000px;
+  bottom: -2000px;
+  left: var(--grid-margin);
+  right: var(--grid-margin);
+  opacity: 0.15;
+  background: repeating-linear-gradient(
+    90deg,
+    #00f 0,
+    #00f var(--grid-column),
+    transparent var(--grid-column),
+    transparent calc(var(--grid-column) + var(--grid-gutter))
+  );
+  pointer-events: none;
+} */
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  color: inherit;
+  list-style: none;
+  font-size: inherit;
+}
+
+body {
+  background-color: #e8e8e8;
+  font-style: normal;
+  line-height: normal;
+  color: #272826;
+  height: max-content;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1920px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.lines {
+  position: absolute;
+  left: 2.5%;
+  height: 100%;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: 'NEXTART';
+  src: local('NEXTART-Light'), url('../Fonts/NEXTART-Light.woff2') format('woff2'),
+    url('../Fonts/NEXTART-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NEXTART';
+  src: local('NEXTART'), url('../Fonts/NEXTART.woff2') format('woff2'),
+    url('../Fonts/NEXTART.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NEXTART';
+  src: local('NEXTART-SemiBold'), url('../Fonts/NEXTART-SemiBold.woff2') format('woff2'),
+    url('../Fonts/NEXTART-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NEXTART';
+  src: local('NEXTART-Heavy'), url('../Fonts/NEXTART-Heavy.woff2') format('woff2'),
+    url('../Fonts/NEXTART-Heavy.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: local('Manrope-Thin'), url('../Fonts/Manrope-Thin.woff2') format('woff2'),
+    url('../Fonts/Manrope-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: local('Manrope-Regular'), url('../Fonts/Manrope-Regular.woff2') format('woff2'),
+    url('../Fonts/Manrope-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: local('Manrope-Medium'), url('../Fonts/Manrope-Medium.woff2') format('woff2'),
+    url('../Fonts/Manrope-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: local('Manrope-Bold'), url('../Fonts/Manrope-Bold.woff2') format('woff2'),
+    url('../Fonts/Manrope-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'RoundedMplus1c';
+  src: local('RoundedMplus1c-Regular'), url('../Fonts/RoundedMplus1c-Regular.woff2') format('woff2'),
+    url('../Fonts/RoundedMplus1c-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'RoundedMplus1c';
+  src: local('RoundedMplus1c-Medium'), url('../Fonts/RoundedMplus1c-Medium.woff2') format('woff2'),
+    url('../Fonts/RoundedMplus1c-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'RoundedMplus1c';
+  src: local('RoundedMplus1c-ExtraBold'),
+    url('../Fonts/RoundedMplus1c-ExtraBold.woff2') format('woff2'),
+    url('../Fonts/RoundedMplus1c-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  .lines {
+    left: 80%;
+  }
+}

@@ -1,0 +1,15 @@
+.button {
+  display: flex;
+  font-family: 'Manrope';
+  font-weight: 400;
+  color: #fff;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.25);
+}
